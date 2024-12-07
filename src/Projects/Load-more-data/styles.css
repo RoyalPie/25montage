@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+img {
+    width: 100%
+}
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid black;
+    transition: transform 0.3s ease-in-out;
+}
+.product-card:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+h1{
+    font-size: 1.25rem;
+    width: 80%;
+}
