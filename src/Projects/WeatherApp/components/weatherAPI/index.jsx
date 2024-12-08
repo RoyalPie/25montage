@@ -50,6 +50,7 @@ const Weather = () => {
           </h3>
           <p className="date">
             {new Date().toLocaleDateString("en-us", {
+              weekday: "long",
               year: "numeric",
               month: "short",
               day: "numeric",
