@@ -24,25 +24,25 @@ const Weather = () => {
       setPending(false);
       throw new Error(error);
     }
-    }
-    
-    function handleInput(e) {
-        setSearchTerm(e.target.value)
-    }
-    function handleSearch() {
-        fetchWeatherData(searchTerm);
-    }
+  }
+
+  function handleInput(e) {
+    setSearchTerm(e.target.value);
+  }
+  function handleSearch() {
+    fetchWeatherData(searchTerm);
+  }
   useEffect(() => {
     fetchWeatherData("hanoi");
   }, []);
-    console.log(searchTerm)
+  console.log(searchTerm);
   return (
     <div className="weather-container">
-          <SearchBar
-              searchTerm={searchTerm}
-              handleSearchTerm={handleInput}
-              handleSearch={handleSearch}
-          />
+      <SearchBar
+        searchTerm={searchTerm}
+        handleSearchTerm={handleInput}
+        handleSearch={handleSearch}
+      />
       {data && (
         <div className="display">
           <h3 className="city">

@@ -1,5 +1,4 @@
-import SearchBar from "./components/search";
-import './app.css'
+import "./app.css";
 import Weather from "./components/weatherAPI";
 const WeatherApp = () => {
   return (
@@ -7,5 +6,5 @@ const WeatherApp = () => {
       <Weather />
     </div>
   );
-}
-export default WeatherApp
+};
+export default WeatherApp;

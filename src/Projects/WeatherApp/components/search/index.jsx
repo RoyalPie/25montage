@@ -9,7 +9,9 @@ const SearchBar = ({ searchTerm, handleSearchTerm, handleSearch }) => {
         value={searchTerm}
         onChange={(e) => handleSearchTerm(e)}
       />
-      <button className="search-btn" onClick={handleSearch}>Search</button>
+      <button className="search-btn" onClick={handleSearch}>
+        Search
+      </button>
     </div>
   );
 };
