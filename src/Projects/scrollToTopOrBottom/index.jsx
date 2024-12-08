@@ -1,14 +1,14 @@
-import useFetch from "../CustomHooks/use-fetch"
+import useFetch from "../CustomHooks/use-fetch";
 
 const ScrollToToporBottom = () => {
-    const { data, pending, error } = useFetch(
-      "https://dummyjson.com/products?limit=80&select=title",
-      {}
-    );
+  const { data, pending, error } = useFetch(
+    "https://dummyjson.com/products?limit=80&select=title",
+    {}
+  );
   return (
     <>
       <h1>ScrollToToporBottom</h1>
-      <h3>This is The TOP SECTION</h3>
+      <h3>This is The Top SECTION</h3>
       <button
         onClick={() =>
           window.scrollTo({
@@ -41,5 +41,5 @@ const ScrollToToporBottom = () => {
       <h3>This is The Bottom SECTION</h3>
     </>
   );
-}
-export default ScrollToToporBottom
+};
+export default ScrollToToporBottom;

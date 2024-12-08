@@ -1,10 +1,12 @@
-import './modal.css'
+import "./modal.css";
 const Modal = ({ id, header, body, footer, closeModal }) => {
   return (
     <div id={id || "Modal"} className="modal">
       <div className="modal-content">
         <div className="header">
-          <span className="close-modal-icon" onClick={closeModal}>&time;</span>
+          <span className="close-modal-icon" onClick={closeModal}>
+            &time;
+          </span>
           <h2>{header ? header : "Header"}</h2>
         </div>
         <div className="body">
@@ -16,10 +18,8 @@ const Modal = ({ id, header, body, footer, closeModal }) => {
             </div>
           )}
         </div>
-              <div className="footer">
-                  {
-                      footer ? footer : (<h2>This is Footer</h2>)
-                  }
+        <div className="footer">
+          {footer ? footer : <h2>This is Footer</h2>}
         </div>
       </div>
     </div>

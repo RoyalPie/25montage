@@ -19,6 +19,7 @@ import ScrollToToporBottom from "./Projects/scrollToTopOrBottom";
 import StarsRating from "./Projects/StarsRating";
 import ThemeToggle from "./Projects/theme-changer";
 import TreeMenu from "./Projects/TreeMenu";
+import WeatherApp from "./Projects/WeatherApp";
 
 function App() {
   return (
@@ -43,7 +44,9 @@ function App() {
       {/* <TestUseFetch/> */}
       {/* <TestUseClickOutside /> */}
       {/* <TestWindowResize/> */}
-      <ScrollToToporBottom />
+      {/* <ScrollToToporBottom /> */}
+      <WeatherApp />
+
     </>
   );
 }

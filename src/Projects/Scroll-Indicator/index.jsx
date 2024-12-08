@@ -7,10 +7,12 @@ const ScrollIndicator = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
 
   function handleScroll() {
-      let percentage =
-        document.documentElement.scrollTop /
-        (document.documentElement.scrollHeight-document.documentElement.clientHeight)*100;
-      setScrollPercentage(percentage)
+    let percentage =
+      (document.documentElement.scrollTop /
+        (document.documentElement.scrollHeight -
+          document.documentElement.clientHeight)) *
+      100;
+    setScrollPercentage(percentage);
   }
   async function fetchData() {
     try {
@@ -46,13 +48,16 @@ const ScrollIndicator = () => {
 
   if (loading) {
     return <div>Loading data ! Pleaae wait</div>;
-    }
-    console.log(scrollPercentage)
+  }
+  console.log(scrollPercentage);
   return (
     <div className="scroll-container">
       <div className="proress-container">
         <h1>Scroll Indicator</h1>
-          <div className="progress" style={{maxWidth: `${scrollPercentage}%`}}></div>
+        <div
+          className="progress"
+          style={{ maxWidth: `${scrollPercentage}%` }}
+        ></div>
       </div>
       <ul className="content">
         {products &&
