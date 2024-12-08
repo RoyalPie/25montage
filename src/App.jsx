@@ -7,6 +7,7 @@ import FeatureFlagGlobalState from "./Projects/ContextFlag/context";
 import CustomTabs from "./Projects/Custom-Tabs";
 import TestUseFetch from "./Projects/CustomHooks/test-use-fetch";
 import TestUseClickOutside from "./Projects/CustomHooks/test-useClickOutside";
+import TestWindowResize from "./Projects/CustomHooks/test-window-resize";
 import GitProfile from "./Projects/Github-Profile";
 import ImageSlider from "./Projects/ImageSlider";
 import LoadMoreData from "./Projects/Load-more-data";
@@ -14,6 +15,7 @@ import ModalTest from "./Projects/Modal-Popup/modal-test";
 import QrCodeGen from "./Projects/qr-code";
 import RandomColor from "./Projects/RandomColor";
 import ScrollIndicator from "./Projects/Scroll-Indicator";
+import ScrollToToporBottom from "./Projects/scrollToTopOrBottom";
 import StarsRating from "./Projects/StarsRating";
 import ThemeToggle from "./Projects/theme-changer";
 import TreeMenu from "./Projects/TreeMenu";
@@ -39,7 +41,9 @@ function App() {
         <ContextFlag />
       </FeatureFlagGlobalState> */}
       {/* <TestUseFetch/> */}
-      <TestUseClickOutside />
+      {/* <TestUseClickOutside /> */}
+      {/* <TestWindowResize/> */}
+      <ScrollToToporBottom />
     </>
   );
 }
