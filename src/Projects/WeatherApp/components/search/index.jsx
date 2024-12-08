@@ -10,7 +10,7 @@ const SearchBar = ({ searchTerm, handleSearchTerm, handleSearch }) => {
         onChange={(e) => handleSearchTerm(e)}
       />
       <button className="search-btn" onClick={handleSearch}>
-        Search
+        Search sasdasd
       </button>
     </div>
   );
